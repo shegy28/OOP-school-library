@@ -1,9 +1,5 @@
 class Nameable
-
-    def self.correct_name
-        raise NotImplementedError
-    end
-    
-end 
-   
-
+  def self.correct_name
+    raise NotImplementedError
+  end
+end
