@@ -25,7 +25,7 @@ class Main
       puts "#{id}: #{option}"
     end
 
-    num = gets.chomp.to_i
+    gets.chomp.to_i
   end
 
   def start
