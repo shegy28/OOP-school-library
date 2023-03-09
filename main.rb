@@ -1,6 +1,6 @@
 require './app'
 
-def main 
+def main
   Main.new
 end
 
