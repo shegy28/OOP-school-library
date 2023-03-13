@@ -33,7 +33,6 @@ class App
     puts 'Do you want to  create a student (1) or a teacher(2)?'
     res = gets.chomp.to_i
 
-
     case res
     when 1
       create_student
