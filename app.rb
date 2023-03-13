@@ -33,9 +33,10 @@ class App
     puts 'Do you want to  create a student (1) or a teacher(2)?'
     res = gets.chomp.to_i
 
-    if res == 1
+    case res
+    when 1
       create_student
-    elsif res == 2
+    when 2
       create_teacher
     end
   end
