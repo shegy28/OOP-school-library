@@ -2,9 +2,9 @@ require './app'
 
 
 class Menu
-    def initialize(app)
-        @app = app
-    end
+  def initialize(app)
+    @app = app
+  end
 
   puts "Welcome to school library app!\n\n"
 
@@ -30,7 +30,6 @@ class Menu
   end
 
   def start
-
     loop do
       case menu
       when 1
@@ -54,5 +53,3 @@ class Menu
     end
   end
 end
-
-
