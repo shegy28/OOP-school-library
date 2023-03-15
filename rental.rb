@@ -18,4 +18,5 @@ class Rental
       person: @person.to_h
     }
   end
+  
 end

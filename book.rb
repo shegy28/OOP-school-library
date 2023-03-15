@@ -19,4 +19,5 @@ class Book
       rentals: @rentals.map(&:to_h)
     }
   end
+  
 end

@@ -11,7 +11,7 @@ class Person < Nameable
   end
 
   attr_accessor :name, :age
-  attr_reader :id, :rentals
+  attr_reader :id, :rentals, :parent_permission
 
   def add_rentals(rental)
     @rentals << rental
@@ -26,7 +26,7 @@ class Person < Nameable
   end
 
   def can_use_services?
-    of_age? || parent_permission?
+    of_age? || parent_permission
   end
   private :of_age?
 
@@ -39,4 +39,5 @@ class Person < Nameable
       rentals: @rentals.map(&:to_h)
     }
   end
+  
 end
