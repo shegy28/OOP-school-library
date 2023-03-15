@@ -39,5 +39,4 @@ class Person < Nameable
       rentals: @rentals.map(&:to_h)
     }
   end
-  
 end

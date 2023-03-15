@@ -15,15 +15,15 @@ describe Book do
     end
   end
 
-  describe "#add_rental" do
-    it "should add the rental to the rentals array" do
-      book = Book.new("The Great Gatsby", "F. Scott Fitzgerald")
-      rental = {date: "2022-01-01", book: book.to_h, person: {name: "John Doe", email: "johndoe@example.com"}}
-      
-      expect {
+  describe '#add_rental' do
+    it 'should add the rental to the rentals array' do
+      book = Book.new('The Great Gatsby', 'F. Scott Fitzgerald')
+      rental = { date: '2022-01-01', book: book.to_h, person: { name: 'John Doe', email: 'johndoe@example.com' } }
+
+      expect do
         book.add_rental(rental)
-      }.to change { book.rentals.length }.by(1)
-      
+      end.to change { book.rentals.length }.by(1)
+
       expect(book.rentals.last).to eq rental
     end
   end
